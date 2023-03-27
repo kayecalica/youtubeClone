@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Youtube.com Clone</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/general.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/video.css">
+    <link rel="stylesheet" href="styles/sidebar.css">
+
+
+  </head>
+  <body>
+    <header class="header">
+      <div class="left-section">
+        <img class="hamburger-menu" src="icons/hamburger-menu.svg">
+        <img class="youtube-logo" src="icons/youtube-logo.svg">
+      </div>
+      <div class="middle-section">
+        <input class="search-bar" type="text" placeholder="Search">
+        <button class="search-button">
+          <img class="search-icon" src="icons/search.svg">
+          <div class="tooltip">Search</div>
+        </button>
+        <!--Put position absolute inside
+        position relative-->
+        <button class="voice-search-button">
+          <img class="voice-search-icon" src="icons/voice-search-icon.svg">
+          <div class="tooltip">Search with your voice</div>
+        </button>
+      </div>
+      <div class="right-section">
+        <div class="upload-icon-container">
+          <img class="upload-icon" src="icons/upload.svg">
+          <div class="tooltip">Create</div>
+        </div>
+        <div class="youtube-apps-icon-container">
+          <img class="youtube-apps-icon" src="icons/youtube-apps.svg">
+          <div class="tooltip">YouTube Apps</div>
+        </div>
+        <div class="notification-icon-container">
+          <img class="notifications-icon" src="icons/notifications.svg">
+          <div class="notifications-count">3</div>
+          <div class="tooltip">Notifications</div>
+        </div>
+        <img class="current-user-picture" src="thumbnails/zoro.jpg">
+      </div>
+    </header>
+
+    <nav class="sidebar">
+      <div class="sidebar-link">
+        <img src="icons/home.svg">
+        <div>Home</div>
+      </div>
+      <div class="sidebar-link">
+        <img src="icons/explore.svg">
+        <div>Explore</div>
+      </div>
+      <div class="sidebar-link">
+        <img src="icons/subscriptions.svg">
+        <div>Subscriptions</div>
+      </div>
+      <div class="sidebar-link">
+        <img src="icons/originals.svg">
+        <div>Originals</div>
+      </div>
+      <div class="sidebar-link">
+        <img src="icons/youtube-music.svg">
+        <div>Youtube Music</div>
+      </div>
+      <div class="sidebar-link">
+        <img src="icons/library.svg">
+        <div>Library</div>
+      </div>
+    </nav>
+  
+    <main>
+      <section class="video-grid">
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <a href="https://www.youtube.com/watch?v=2ZtLDXF1V6w&list=WL&index=3" target="_blank" class="video-title-link" >
+            <img class="thumbnail" src="thumbnails/thumbnail-1.webp">
+            </a>
+            <div class="video-time">2:00:12</div>
+          </div>
+          <div class="video-info-grid">
+            <div  class="channel-picture">
+              <div class="profile-picture-container">
+                <a href="https://www.youtube.com/@TheOrganicChemistryTutor" target="_blank" >
+                  <img class="profile-picture" src="channel-pictures/channel-1.jpeg">
+                </a>
+                <div class="channel-tooltip">
+                  <img class="channel-tooltip-picture" src="channel-pictures/channel-1.jpeg">
+                  <div>
+                    <div class="channel-tooltip-name">
+                      The Organic Chemistry Tutor
+                    </div>
+                    <div class="channel-tooltip-stats">
+                      15M subscribers
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+            </div>
+            <div class="video-info">
+              <a href="https://www.youtube.com/watch?v=2ZtLDXF1V6w&list=WL&index=3" target="_blank" class="video-title-link" >
+               <p class="video-title">
+                Gas Law Problems Combined & Ideal - Density, Molar Mass, Mole Fraction, Partial Pressure, Effusion 
+               </p>
+              </a>
+              <p class="video-author">The Organic Chemistry Tutor</p>
+              <p class="video-stats">706K views &#183; 6 years ago</p>
+            </div>
+          </div>
+        </div>
+    
+         
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <a href="https://www.youtube.com/watch?v=52nqjrCs57s" target="_blank" class="video-title-link" >
+              <img class="thumbnail" src="thumbnails/thumbnail-2.webp">
+            </a>
+            <div class="video-time">13:37</div>
+          </div>
+          <div class="video-info-grid">
+            <div  class="channel-picture">
+              <div class="profile-picture-container">
+                <a href="https://www.youtube.com/@BetterThanYesterday" target="_blank" >
+                  <img class="profile-picture" src="channel-pictures/channel-2.jpeg">
+                </a>
+                <div class="channel-tooltip">
+                  <img class="channel-tooltip-picture" src="channel-pictures/channel-2.jpeg">
+                  <div>
+                    <div class="channel-tooltip-name">
+                      Markiplier
+                    </div>
+                    <div class="channel-tooltip-stats">
+                      34.4M subscribers
+                    </div>
+                  </div>
+                </div>
+              </div>
+            
+            </div>
+            <div class="video-info">
+              <a href="https://www.youtube.com/watch?v=mP0RAo9SKZk&t=1s" target="_blank" class="video-title-link" >
+                <p class="video-title">
+                  Why You Can't FOCUS - And How To Fix That
+                </p>
+              </a>
+              <p class="video-author">Better Than Yesterday </p>
+              <p class="video-stats">3.6M views &#183; 3 years months ago</p>
+            </div>
+          </div>
+        </div>
+    
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <a href="https://www.youtube.com/watch?v=RO0i34CVnIQ" target="_blank" class="video-title-link" >
+              <img class="thumbnail" src="thumbnails/thumbnail-3.webp">
+            </a>
+            <div class="video-time">46:54</div>
+          </div>
+          <div class="video-info-grid">
+            <div  class="channel-picture">
+              <a href="https://www.youtube.com/@leeplay.official" target="_blank" >
+                <img class="profile-picture" src="channel-pictures/channel-3.jpg">
+              </a>
+            </div>
+            <div class="video-info">
+              <a href="https://www.youtube.com/watch?v=RO0i34CVnIQ" target="_blank" class="video-title-link">
+                <p class="video-title">
+                  늦은 밤, 집으로 돌아가는 택시에서 (playlist)
+                 </p>
+              </a>
+              <p class="video-author">리플레이LEEPLAY</p>
+              <p class="video-stats">1.9M views &#183; 1 year ago</p>
+            </div>
+          </div>
+        </div>
+    
+         
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <a href="https://www.youtube.com/watch?v=uTAaFExLgwQ" target="_blank" class="video-title-link" >
+              <img class="thumbnail" src="thumbnails/thumbnail-4.webp">
+            </a>
+            <div class="video-time">20:54</div>
+          </div>
+          <div class="video-info-grid">
+            <div  class="channel-picture">
+              <a href="https://www.youtube.com/@NetworkChuck" target="_blank" >
+                <img class="profile-picture" src="channel-pictures/channel-4.jpg">
+              </a>
+            </div>
+            <div class="video-info">
+              <a href="https://www.youtube.com/watch?v=uTAaFExLgwQ" target="_blank" class="video-title-link" >
+                <p class="video-title">
+                  the hacker’s roadmap (how to get started in IT in 2023)
+                </p>
+              </a>
+              <p class="video-author">NetworkChuck </p>
+              <p class="video-stats">505k views &#183; 1 months ago</p>
+            </div>
+          </div>
+        </div>
+    
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <a href="https://www.youtube.com/watch?v=02V-8cZ8xo4" target="_blank" class="video-title-link" >
+              <img class="thumbnail" src="thumbnails/thumbnail-5.webp">
+            </a>
+            <div class="video-time">3:14</div>
+          </div>
+          <div class="video-info-grid">
+            <div  class="channel-picture">
+              <a href="https://www.youtube.com/channel/UCFl7yKfcRcFmIUbKeCA-SJQ" target="_blank" >
+                <img class="profile-picture" src="channel-pictures/channel-5.jpg">
+              </a>
+            </div>
+            <div class="video-info">
+              <a href="https://www.youtube.com/watch?v=02V-8cZ8xo4" target="_blank" class="video-title-link" >
+                <p class="video-title">
+                  Afterthought          
+                </p>
+              </a>
+              <p class="video-author">Joji</p>
+              <p class="video-stats">7.5M views &#183; 2 years ago</p>
+            </div>
+          </div>
+        </div>
+    
+         
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <a href="https://www.youtube.com/watch?v=Ry8tRRfxxf4" target="_blank" class="video-title-link" >
+              <img class="thumbnail" src="thumbnails/thumbnail-6.webp">
+            </a>
+            <div class="video-time">5:29</div>
+          </div>
+          <div class="video-info-grid">
+            <div  class="channel-picture">
+              <a href="https://www.youtube.com/@BoostMyTool" target="_blank" >
+                <img class="profile-picture" src="channel-pictures/channel-6.jpg">
+              </a>
+            </div>
+            <div class="video-info">
+              <a href="https://www.youtube.com/watch?v=Ry8tRRfxxf4" target="_blank" class="video-title-link" >
+                <p class="video-title">
+                  How to Run PHP Using Visual Studio Code 2021
+                </p>
+              </a>
+              <p class="video-author">BoostMyTool</p>
+              <p class="video-stats">123k views &#183; 1 years ago</p>
+            </div>
+          </div>
+        </div>
+    
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <a href="https://www.youtube.com/watch?v=Sv5yCzPCkv8" target="_blank" class="video-title-link" >
+              <img class="thumbnail" src="thumbnails/thumbnail-7.webp">
+            </a>
+            <div class="video-time">3:23</div>
+          </div>
+          <div class="video-info-grid">
+            <div  class="channel-picture">
+              <a href="https://www.youtube.com/channel/UCO5IQ70V7l-XpHW40HwaGsw" target="_blank" >
+                <img class="profile-picture" src="channel-pictures/channel-7.jpg">
+              </a>
+            </div>
+            <div class="video-info">
+              <a href="https://www.youtube.com/watch?v=Sv5yCzPCkv8" target="_blank" class="video-title-link" >
+                <p class="video-title">
+                  SZA - Snooze (Audio)
+                </p>
+              </a>
+              <p class="video-author">SZA</p>
+              <p class="video-stats">9M views &#183; 1 months ago</p>
+            </div>
+          </div>
+        </div>
+    
+         
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <a href="https://www.youtube.com/watch?v=oYRda7UtuhA&t=1s" target="_blank" class="video-title-link" >
+              <img class="thumbnail" src="thumbnails/thumbnail-8.webp">
+            </a>
+            <div class="video-time">1:11:58</div>
+          </div>
+          <div class="video-info-grid">
+            <div  class="channel-picture">
+              <a href="https://www.youtube.com/@EasyTutorialsVideo" target="_blank" >
+                <img class="profile-picture" src="channel-pictures/channel-8.jpg">
+              </a>
+            </div>
+            <div class="video-info">
+              <a href="https://www.youtube.com/watch?v=oYRda7UtuhA&t=1s" target="_blank" class="video-title-link" >
+                <p class="video-title">
+                  How To Make Website Using HTML & CSS | Full Responsive Multi Page Website Design Step by Step
+                </p>
+              </a>
+              <p class="video-author">Easy Tutorials</p>
+              <p class="video-stats">4.1M views &#183; 1 years months ago</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
